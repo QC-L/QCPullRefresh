@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'QCPullRefresh'
-  s.version      = '0.1.0'
+  s.version      = '0.1.1'
   s.summary      = 'QCPullRefresh is imitation BanTanAnimation Pull Refresh.'
   s.description      = <<-DESC
 TODO: 这是一款模仿半糖下拉刷新的刷新控件, 仅供学习和参考. 其中主要参考了MJRefresh以及一些其他的刷新动画效果，旨在提高刷新效率.
