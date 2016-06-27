@@ -8,7 +8,7 @@
 
 #import "QCHalfCandyShadowAnimation.h"
 
-@interface QCHalfCandyShadowAnimation ()
+@interface QCHalfCandyShadowAnimation () <CAAnimationDelegate>
 
 @property (nonatomic, strong) CABasicAnimation *currentAnimation;
 
@@ -72,6 +72,7 @@
     _currentAnimation.repeatCount = self.repeatCount;
     _currentAnimation.duration  = self.duration;
     _currentAnimation.delegate = self;
+    
     [gradientMask addAnimation:_currentAnimation forKey:@"QCHalfCandyShadowAnimation"];
 }
 

@@ -1,6 +1,0 @@
-framework module QCPullRefresh {
-  umbrella header "QCPullRefresh-umbrella.h"
-
-  export *
-  module * { export * }
-}
