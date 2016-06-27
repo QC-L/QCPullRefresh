@@ -30,8 +30,8 @@ TODO: 这是一款模仿半糖下拉刷新的刷新控件, 仅供学习和参考
 
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'QCPullRefresh/Classes/**/*'
-  
+  s.source_files  = "QCPullRefresh", "QCPullRefresh/**/*.{h,m}"
+  s.requires_arc = true
   # s.resource_bundles = {
   #   'QCPullRefresh' => ['QCPullRefresh/Assets/*.png']
   # }

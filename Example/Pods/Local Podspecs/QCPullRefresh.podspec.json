@@ -1,22 +1,31 @@
 {
   "name": "QCPullRefresh",
   "version": "0.1.0",
-  "summary": "A short description of QCPullRefresh.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/QCPullRefresh",
+  "summary": "QCPullRefresh is imitation BanTanAnimation Pull Refresh.",
+  "description": "TODO: 这是一款模仿半糖下拉刷新的刷新控件, 仅供学习和参考. 其中主要参考了MJRefresh以及一些其他的刷新动画效果，旨在提高刷新效率.",
+  "homepage": "https://github.com/QC-L/QCPullRefresh",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "QCL": "liqichang_4869@163.com"
+    "QC-L": "liqichang_4869@163.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/QCPullRefresh.git",
+    "git": "https://github.com/QC-L/QCPullRefresh.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "7.0"
   },
-  "source_files": "QCPullRefresh/Classes/**/*"
+  "source_files": [
+    "QCPullRefresh",
+    "QCPullRefresh/**/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "CoreText",
+    "QuartzCore"
+  ]
 }
