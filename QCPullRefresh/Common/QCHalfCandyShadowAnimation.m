@@ -8,7 +8,7 @@
 
 #import "QCHalfCandyShadowAnimation.h"
 
-@interface QCHalfCandyShadowAnimation () <CAAnimationDelegate>
+@interface QCHalfCandyShadowAnimation ()
 
 @property (nonatomic, strong) CABasicAnimation *currentAnimation;
 

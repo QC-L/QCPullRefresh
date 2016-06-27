@@ -19,8 +19,8 @@ DESC
   s.license      = 'MIT'
   s.author       = { 'QC-L' => 'liqichang_4869@163.com' }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => 'https://github.com/QC-L/QCPullRefresh.git', :tag => s.version.to_s }
-  s.source_files  = "QCPullRefresh", "QCPullRefresh/**/*.{h,m}"
+  s.source       = { :git => 'https://github.com/QC-L/QCPullRefresh.git', :tag => s.version }
+  s.source_files  = 'QCPullRefresh', 'QCPullRefresh/**/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'UIKit', 'CoreText', 'QuartzCore'
 
