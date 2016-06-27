@@ -1,0 +1,16 @@
+PODS:
+  - QCPullRefresh (0.1.0)
+
+DEPENDENCIES:
+  - QCPullRefresh (from `../`)
+
+EXTERNAL SOURCES:
+  QCPullRefresh:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QCPullRefresh: a17a943ea95fe9aead10621954a8f6a3ff58062a
+
+PODFILE CHECKSUM: 69911254f57954f436ddf347430a8d7ff5487d28
+
+COCOAPODS: 1.0.1
