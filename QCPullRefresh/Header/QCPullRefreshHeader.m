@@ -46,17 +46,16 @@
             return;
         }
         
-        CGFloat insetTop = -self.scrollView.qc_offsetY > _scrollviewOriginalInset.top ? -self.scrollView.qc_offsetY : _scrollviewOriginalInset.top;
-        insetTop = insetTop > self.qc_height + _scrollviewOriginalInset.top ? self.qc_height + _scrollviewOriginalInset.top : insetTop;
+        CGFloat insetTop = -self.scrollView.qc_offsetY > _scrollViewOriginalInset.top ? -self.scrollView.qc_offsetY : _scrollViewOriginalInset.top;
+        insetTop = insetTop > self.qc_height + _scrollViewOriginalInset.top ? self.qc_height + _scrollViewOriginalInset.top : insetTop;
         self.scrollView.qc_insetTop = insetTop;
-        self.insetTopDelta = _scrollviewOriginalInset.top - insetTop;
+        self.insetTopDelta = _scrollViewOriginalInset.top - insetTop;
         return;
     }
-    _scrollviewOriginalInset = self.scrollView.contentInset;
+    _scrollViewOriginalInset = self.scrollView.contentInset;
     // 当前contentOffset
     CGFloat offsetY = self.scrollView.qc_offsetY;
-    CGFloat happenOffsetY = -self.scrollViewOriginalInset.top;
-    
+    CGFloat happenOffsetY = -_scrollViewOriginalInset.top;
     if (offsetY > happenOffsetY) {
         return;
     }
@@ -83,15 +82,24 @@
         if (oldState != QCRefreshStateRefreshing) {
             return;
         }
-        [UIView animateWithDuration:QCRefreshSlowAnimationDuration animations:^{
+        if (self.isHaveAnimationEndRefresh) {
+            [UIView animateWithDuration:QCRefreshSlowAnimationDuration animations:^{
+                self.scrollView.qc_insetTop += self.insetTopDelta;
+                if (self.isAutomaticallyChangeAlpha) self.alpha = 0.0;
+            } completion:^(BOOL finished) {
+                self.pullingPercent = 0.0;
+                if (self.endRefreshingCompletionBlock) {
+                    self.endRefreshingCompletionBlock();
+                }
+            }];
+        } else {
             self.scrollView.qc_insetTop += self.insetTopDelta;
             if (self.isAutomaticallyChangeAlpha) self.alpha = 0.0;
-        } completion:^(BOOL finished) {
             self.pullingPercent = 0.0;
             if (self.endRefreshingCompletionBlock) {
                 self.endRefreshingCompletionBlock();
             }
-        }];
+        }
         
     } else if (state == QCRefreshStateRefreshing) {
         dispatch_async(dispatch_get_main_queue(), ^{

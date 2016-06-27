@@ -75,7 +75,7 @@
     pathLayer.path = path.CGPath;
     pathLayer.strokeColor = [UIColor colorWithRed:234.0/255 green:84.0/255 blue:87.0/255 alpha:1].CGColor;
     pathLayer.fillColor = nil;
-    pathLayer.lineWidth = 1.0f;
+    pathLayer.lineWidth = 0.5f;
     pathLayer.lineJoin = kCALineJoinBevel;
     pathLayer.speed = 0;
     pathLayer.timeOffset = 0;

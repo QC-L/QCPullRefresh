@@ -20,6 +20,7 @@
         [self prepare];
         
         self.state = QCRefreshStateNormal;
+        self.isHaveAnimationEndRefresh = YES;
     }
     return self;
 }
@@ -129,6 +130,17 @@
 
 - (void)endRefreshing {
     self.state = QCRefreshStateNormal;
+}
+
+- (void)endRefreshingAnimation:(BOOL)isAnimation {
+    [self endRefreshingAnimation:isAnimation completion:nil];
+}
+- (void)endRefreshingAnimation:(BOOL)isAnimation
+                    completion:(QCRefreshBaseControlEndRefreshingCompletionBlock)completion {
+    self.isHaveAnimationEndRefresh = isAnimation;
+    self.endRefreshingCompletionBlock = completion;
+    [self endRefreshing];
+    
 }
 
 - (BOOL)isRefreshing {

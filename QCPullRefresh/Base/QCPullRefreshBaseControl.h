@@ -32,7 +32,7 @@ typedef void(^QCRefreshBaseControlBeginRefreshingCompletionBlock)();
 typedef void(^QCRefreshBaseControlEndRefreshingCompletionBlock)();
 
 @interface QCPullRefreshBaseControl : UIView {
-    UIEdgeInsets _scrollviewOriginalInset;
+    UIEdgeInsets _scrollViewOriginalInset;
     __weak UIScrollView *_scrollView;
 }
 
@@ -49,9 +49,14 @@ typedef void(^QCRefreshBaseControlEndRefreshingCompletionBlock)();
 - (void)executeRefreshingCallback;
 
 #pragma mark - refresh state control
+@property (nonatomic, assign) BOOL isHaveAnimationEndRefresh;
 /** 进入刷新状态 */
 - (void)beginRefreshing;
 - (void)endRefreshing;
+- (void)endRefreshingAnimation:(BOOL)isAnimation;
+- (void)endRefreshingAnimation:(BOOL)isAnimation
+                    completion:(QCRefreshBaseControlEndRefreshingCompletionBlock)completion;
+
 /** 判断是否正在刷新 */
 - (BOOL)isRefreshing;
 /** 刷新状态 */

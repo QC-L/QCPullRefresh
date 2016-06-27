@@ -9,5 +9,8 @@
 #import "QCPullRefreshHeader.h"
 
 @interface QCPullRefreshAnimationHeader : QCPullRefreshHeader
++ (instancetype)headerPullingTitle:(NSString *)pullingTitle
+                   refreshingTitle:(NSString *)refreshingTitle
+         headerWithRefreshingBlock:(QCRefreshBaseControlRefreshingBlock)refreshingBlock;
 @property (nonatomic, strong) UILabel *refreshingLabel;
 @end

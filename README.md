@@ -22,10 +22,9 @@ pod "QCPullRefresh"
 
 ## Author
 
-QCL, liqichang_4869@163.com
+QC.L, liqichang4869@gmail.com
 
 ## License
 
 QCPullRefresh is available under the MIT license. See the LICENSE file for more info.
-=======
-仿半糖动画刷新控件
+

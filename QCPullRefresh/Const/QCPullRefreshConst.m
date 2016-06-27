@@ -10,7 +10,7 @@
 
 const CGFloat QCRefreshFastAnimationDuration = 0.25;
 const CGFloat QCRefreshSlowAnimationDuration = 0.4;
-const CGFloat QCRefreshHeaderHeight = 54.0;
+const CGFloat QCRefreshHeaderHeight = 64.0;
 
 NSString * const QCRefreshKeyPathContentOffset = @"contentOffset";
 NSString * const QCRefreshKeyPathContentSize = @"contentSize";
