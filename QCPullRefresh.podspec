@@ -19,7 +19,7 @@ TODO: 这是一款模仿半糖下拉刷新的刷新控件, 仅供学习和参考
   s.author           = { 'QC-L' => 'liqichang_4869@163.com' }
   s.source           = { :git => 'https://github.com/QC-L/QCPullRefresh.git', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
-  s.source_files = 'QCPullRefresh/Classes/QCPullRefresh/**/*'
+  s.source_files = 'QCPullRefresh/*.{h,m}'
   s.requires_arc = true
   s.frameworks = 'UIKit', 'CoreText', 'QuartzCore'
 end

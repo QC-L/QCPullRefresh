@@ -18,7 +18,8 @@
   "platforms": {
     "ios": "7.0"
   },
-  "source_files": "QCPullRefresh/Classes/**/*",
+  "source_files": "QCPullRefresh/*.{h,m}",
+  "public_header_files": "QCPullRefresh/QCPullRefresh.h",
   "requires_arc": true,
   "frameworks": [
     "UIKit",

@@ -203,12 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "QCPullRefresh_Example" */;
 			buildPhases = (
-				64A4F35C030001C474E8DA1F /* 📦 Check Pods Manifest.lock */,
+				64A4F35C030001C474E8DA1F /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				464325606B4546899A5513A6 /* 📦 Embed Pods Frameworks */,
-				78F5E5F6778DF15137DAC73C /* 📦 Copy Pods Resources */,
+				464325606B4546899A5513A6 /* [CP] Embed Pods Frameworks */,
+				78F5E5F6778DF15137DAC73C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,12 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "QCPullRefresh_Tests" */;
 			buildPhases = (
-				4B0425D203A250FC263C337C /* 📦 Check Pods Manifest.lock */,
+				4B0425D203A250FC263C337C /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				798AB09CDD02769B9195A4C8 /* 📦 Embed Pods Frameworks */,
-				B36BA9AEE46E798800DBE5F5 /* 📦 Copy Pods Resources */,
+				798AB09CDD02769B9195A4C8 /* [CP] Embed Pods Frameworks */,
+				B36BA9AEE46E798800DBE5F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,14 +297,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		464325606B4546899A5513A6 /* 📦 Embed Pods Frameworks */ = {
+		464325606B4546899A5513A6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,14 +312,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QCPullRefresh_Example/Pods-QCPullRefresh_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B0425D203A250FC263C337C /* 📦 Check Pods Manifest.lock */ = {
+		4B0425D203A250FC263C337C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,14 +327,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		64A4F35C030001C474E8DA1F /* 📦 Check Pods Manifest.lock */ = {
+		64A4F35C030001C474E8DA1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,14 +342,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		78F5E5F6778DF15137DAC73C /* 📦 Copy Pods Resources */ = {
+		78F5E5F6778DF15137DAC73C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,14 +357,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QCPullRefresh_Example/Pods-QCPullRefresh_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		798AB09CDD02769B9195A4C8 /* 📦 Embed Pods Frameworks */ = {
+		798AB09CDD02769B9195A4C8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,14 +372,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QCPullRefresh_Tests/Pods-QCPullRefresh_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B36BA9AEE46E798800DBE5F5 /* 📦 Copy Pods Resources */ = {
+		B36BA9AEE46E798800DBE5F5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
