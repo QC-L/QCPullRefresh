@@ -28,4 +28,4 @@ QCL, liqichang_4869@163.com
 
 QCPullRefresh is available under the MIT license. See the LICENSE file for more info.
 =======
-仿半糖动画刷新控件
+
