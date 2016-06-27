@@ -1,0 +1,1 @@
+/usr/libexec/PlistBuddy -c "Add:NSAppTransportSecurity:NSAllowsArbitraryLoads bool true" ./Info.plist

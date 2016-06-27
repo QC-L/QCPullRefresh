@@ -1,0 +1,22 @@
+{
+  "name": "QCPullRefresh",
+  "version": "0.1.0",
+  "summary": "A short description of QCPullRefresh.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/QCPullRefresh",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "QCL": "liqichang_4869@163.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/QCPullRefresh.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QCPullRefresh/Classes/**/*"
+}

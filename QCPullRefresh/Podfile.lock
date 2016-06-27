@@ -1,0 +1,21 @@
+PODS:
+  - CBStoreHouseRefreshControl (1.0)
+  - MJRefresh (3.1.8)
+  - SVPullToRefresh (0.4.1)
+  - YiRefresh (0.9.5)
+
+DEPENDENCIES:
+  - CBStoreHouseRefreshControl
+  - MJRefresh
+  - SVPullToRefresh
+  - YiRefresh
+
+SPEC CHECKSUMS:
+  CBStoreHouseRefreshControl: a814bd725e74ff4c1e8dd96eb02358199b0da04f
+  MJRefresh: d226bbe0b1ec398f426ba1dc99319b4e51182e19
+  SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
+  YiRefresh: 80c8e4113d720be8e133a5b8f499ccad27dde760
+
+PODFILE CHECKSUM: b0e8dbc3260cc7906e74ce7c7b83801aed09c7c5
+
+COCOAPODS: 1.0.0
