@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C63EFB61D21363B004C688E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFB51D21363B004C688E /* main.m */; };
+		7C63EFB91D21363B004C688E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFB81D21363B004C688E /* AppDelegate.m */; };
+		7C63EFBC1D21363B004C688E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFBB1D21363B004C688E /* ViewController.m */; };
+		7C63EFBF1D21363B004C688E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C63EFBD1D21363B004C688E /* Main.storyboard */; };
+		7C63EFC11D21363B004C688E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C63EFC01D21363B004C688E /* Assets.xcassets */; };
+		7C63EFC41D21363B004C688E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */; };
+		7C63EFE41D21364A004C688E /* QCPullRefreshBaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFCE1D21364A004C688E /* QCPullRefreshBaseControl.m */; };
+		7C63EFE51D21364A004C688E /* UIScrollView+QCAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD11D21364A004C688E /* UIScrollView+QCAttribute.m */; };
+		7C63EFE61D21364A004C688E /* UIScrollView+QCPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD31D21364A004C688E /* UIScrollView+QCPullRefresh.m */; };
+		7C63EFE71D21364A004C688E /* UIView+QCAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD51D21364A004C688E /* UIView+QCAttribute.m */; };
+		7C63EFE81D21364A004C688E /* QCHalfCandyAnimationRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD81D21364A004C688E /* QCHalfCandyAnimationRefresh.m */; };
+		7C63EFE91D21364A004C688E /* QCHalfCandyShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFDA1D21364A004C688E /* QCHalfCandyShadowAnimation.m */; };
+		7C63EFEA1D21364A004C688E /* QCPullRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */; };
+		7C63EFEB1D21364A004C688E /* QCPullRefreshAnimationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */; };
+		7C63EFEC1D21364A004C688E /* QCPullRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C63EFB11D21363B004C688E /* QCPullRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCPullRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C63EFB51D21363B004C688E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C63EFB71D21363B004C688E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C63EFB81D21363B004C688E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C63EFBA1D21363B004C688E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7C63EFBB1D21363B004C688E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7C63EFBE1D21363B004C688E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C63EFC01D21363B004C688E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C63EFC31D21363B004C688E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C63EFC51D21363B004C688E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C63EFCD1D21364A004C688E /* QCPullRefreshBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshBaseControl.h; sourceTree = "<group>"; };
+		7C63EFCE1D21364A004C688E /* QCPullRefreshBaseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshBaseControl.m; sourceTree = "<group>"; };
+		7C63EFD01D21364A004C688E /* UIScrollView+QCAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QCAttribute.h"; sourceTree = "<group>"; };
+		7C63EFD11D21364A004C688E /* UIScrollView+QCAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QCAttribute.m"; sourceTree = "<group>"; };
+		7C63EFD21D21364A004C688E /* UIScrollView+QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QCPullRefresh.h"; sourceTree = "<group>"; };
+		7C63EFD31D21364A004C688E /* UIScrollView+QCPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QCPullRefresh.m"; sourceTree = "<group>"; };
+		7C63EFD41D21364A004C688E /* UIView+QCAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QCAttribute.h"; sourceTree = "<group>"; };
+		7C63EFD51D21364A004C688E /* UIView+QCAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QCAttribute.m"; sourceTree = "<group>"; };
+		7C63EFD71D21364A004C688E /* QCHalfCandyAnimationRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCHalfCandyAnimationRefresh.h; sourceTree = "<group>"; };
+		7C63EFD81D21364A004C688E /* QCHalfCandyAnimationRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCHalfCandyAnimationRefresh.m; sourceTree = "<group>"; };
+		7C63EFD91D21364A004C688E /* QCHalfCandyShadowAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCHalfCandyShadowAnimation.h; sourceTree = "<group>"; };
+		7C63EFDA1D21364A004C688E /* QCHalfCandyShadowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCHalfCandyShadowAnimation.m; sourceTree = "<group>"; };
+		7C63EFDC1D21364A004C688E /* QCPullRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshConst.h; sourceTree = "<group>"; };
+		7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshConst.m; sourceTree = "<group>"; };
+		7C63EFDF1D21364A004C688E /* QCPullRefreshAnimationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshAnimationHeader.h; sourceTree = "<group>"; };
+		7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshAnimationHeader.m; sourceTree = "<group>"; };
+		7C63EFE11D21364A004C688E /* QCPullRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshHeader.h; sourceTree = "<group>"; };
+		7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshHeader.m; sourceTree = "<group>"; };
+		7C63EFE31D21364A004C688E /* QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefresh.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C63EFAE1D21363B004C688E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C63EFA81D21363B004C688E = {
+			isa = PBXGroup;
+			children = (
+				7C63EFB31D21363B004C688E /* QCPullRefreshDemo */,
+				7C63EFB21D21363B004C688E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C63EFB21D21363B004C688E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFB11D21363B004C688E /* QCPullRefreshDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C63EFB31D21363B004C688E /* QCPullRefreshDemo */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFCB1D21364A004C688E /* QCPullRefresh */,
+				7C63EFB71D21363B004C688E /* AppDelegate.h */,
+				7C63EFB81D21363B004C688E /* AppDelegate.m */,
+				7C63EFBA1D21363B004C688E /* ViewController.h */,
+				7C63EFBB1D21363B004C688E /* ViewController.m */,
+				7C63EFBD1D21363B004C688E /* Main.storyboard */,
+				7C63EFC01D21363B004C688E /* Assets.xcassets */,
+				7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */,
+				7C63EFC51D21363B004C688E /* Info.plist */,
+				7C63EFB41D21363B004C688E /* Supporting Files */,
+			);
+			path = QCPullRefreshDemo;
+			sourceTree = "<group>";
+		};
+		7C63EFB41D21363B004C688E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFB51D21363B004C688E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C63EFCB1D21364A004C688E /* QCPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFCC1D21364A004C688E /* Base */,
+				7C63EFCF1D21364A004C688E /* Category */,
+				7C63EFD61D21364A004C688E /* Common */,
+				7C63EFDB1D21364A004C688E /* Const */,
+				7C63EFDE1D21364A004C688E /* Header */,
+				7C63EFE31D21364A004C688E /* QCPullRefresh.h */,
+			);
+			name = QCPullRefresh;
+			path = ../../QCPullRefresh;
+			sourceTree = "<group>";
+		};
+		7C63EFCC1D21364A004C688E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFCD1D21364A004C688E /* QCPullRefreshBaseControl.h */,
+				7C63EFCE1D21364A004C688E /* QCPullRefreshBaseControl.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7C63EFCF1D21364A004C688E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFD01D21364A004C688E /* UIScrollView+QCAttribute.h */,
+				7C63EFD11D21364A004C688E /* UIScrollView+QCAttribute.m */,
+				7C63EFD21D21364A004C688E /* UIScrollView+QCPullRefresh.h */,
+				7C63EFD31D21364A004C688E /* UIScrollView+QCPullRefresh.m */,
+				7C63EFD41D21364A004C688E /* UIView+QCAttribute.h */,
+				7C63EFD51D21364A004C688E /* UIView+QCAttribute.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7C63EFD61D21364A004C688E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFD71D21364A004C688E /* QCHalfCandyAnimationRefresh.h */,
+				7C63EFD81D21364A004C688E /* QCHalfCandyAnimationRefresh.m */,
+				7C63EFD91D21364A004C688E /* QCHalfCandyShadowAnimation.h */,
+				7C63EFDA1D21364A004C688E /* QCHalfCandyShadowAnimation.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7C63EFDB1D21364A004C688E /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFDC1D21364A004C688E /* QCPullRefreshConst.h */,
+				7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		7C63EFDE1D21364A004C688E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7C63EFDF1D21364A004C688E /* QCPullRefreshAnimationHeader.h */,
+				7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */,
+				7C63EFE11D21364A004C688E /* QCPullRefreshHeader.h */,
+				7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C63EFB01D21363B004C688E /* QCPullRefreshDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C63EFC81D21363B004C688E /* Build configuration list for PBXNativeTarget "QCPullRefreshDemo" */;
+			buildPhases = (
+				7C63EFAD1D21363B004C688E /* Sources */,
+				7C63EFAE1D21363B004C688E /* Frameworks */,
+				7C63EFAF1D21363B004C688E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCPullRefreshDemo;
+			productName = QCPullRefreshDemo;
+			productReference = 7C63EFB11D21363B004C688E /* QCPullRefreshDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C63EFA91D21363B004C688E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = QC.L;
+				TargetAttributes = {
+					7C63EFB01D21363B004C688E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7C63EFAC1D21363B004C688E /* Build configuration list for PBXProject "QCPullRefreshDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C63EFA81D21363B004C688E;
+			productRefGroup = 7C63EFB21D21363B004C688E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C63EFB01D21363B004C688E /* QCPullRefreshDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C63EFAF1D21363B004C688E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C63EFC41D21363B004C688E /* LaunchScreen.storyboard in Resources */,
+				7C63EFC11D21363B004C688E /* Assets.xcassets in Resources */,
+				7C63EFBF1D21363B004C688E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C63EFAD1D21363B004C688E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C63EFE61D21364A004C688E /* UIScrollView+QCPullRefresh.m in Sources */,
+				7C63EFBC1D21363B004C688E /* ViewController.m in Sources */,
+				7C63EFE41D21364A004C688E /* QCPullRefreshBaseControl.m in Sources */,
+				7C63EFB91D21363B004C688E /* AppDelegate.m in Sources */,
+				7C63EFE91D21364A004C688E /* QCHalfCandyShadowAnimation.m in Sources */,
+				7C63EFEB1D21364A004C688E /* QCPullRefreshAnimationHeader.m in Sources */,
+				7C63EFB61D21363B004C688E /* main.m in Sources */,
+				7C63EFEA1D21364A004C688E /* QCPullRefreshConst.m in Sources */,
+				7C63EFE81D21364A004C688E /* QCHalfCandyAnimationRefresh.m in Sources */,
+				7C63EFEC1D21364A004C688E /* QCPullRefreshHeader.m in Sources */,
+				7C63EFE51D21364A004C688E /* UIScrollView+QCAttribute.m in Sources */,
+				7C63EFE71D21364A004C688E /* UIView+QCAttribute.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7C63EFBD1D21363B004C688E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C63EFBE1D21363B004C688E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C63EFC31D21363B004C688E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C63EFC61D21363B004C688E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7C63EFC71D21363B004C688E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C63EFC91D21363B004C688E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QCPullRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.QCL.QCPullRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7C63EFCA1D21363B004C688E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QCPullRefreshDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.QCL.QCPullRefreshDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C63EFAC1D21363B004C688E /* Build configuration list for PBXProject "QCPullRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C63EFC61D21363B004C688E /* Debug */,
+				7C63EFC71D21363B004C688E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C63EFC81D21363B004C688E /* Build configuration list for PBXNativeTarget "QCPullRefreshDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C63EFC91D21363B004C688E /* Debug */,
+				7C63EFCA1D21363B004C688E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C63EFA91D21363B004C688E /* Project object */;
+}
