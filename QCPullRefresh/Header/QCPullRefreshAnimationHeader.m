@@ -11,6 +11,7 @@
 #import "QCHalfCandyShadowAnimation.h"
 
 @interface QCPullRefreshAnimationHeader ()
+@property (nonatomic, strong) UILabel *refreshingLabel;
 @property (nonatomic, copy) NSString *pullingTitle;
 @property (nonatomic, copy) NSString *refreshingTitle;
 @property (nonatomic, strong) NSMutableDictionary *stateTitles;

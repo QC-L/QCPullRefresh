@@ -12,9 +12,7 @@
 
 @interface QCHalfCandyAnimationRefresh : NSObject
 + (QCHalfCandyAnimationRefresh *)defaultAnimationRefresh;
-// Pulling Animation
 - (CALayer *)qcHalfCandyAnimationRefreshWithTitle:(NSString *)title;
 - (void)addRefreshingAnimation;
 - (void)animationTimeOffset:(CGFloat)offset;
-
 @end

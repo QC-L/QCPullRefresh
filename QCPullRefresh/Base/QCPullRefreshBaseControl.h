@@ -32,14 +32,18 @@ typedef void(^QCRefreshBaseControlBeginRefreshingCompletionBlock)();
 typedef void(^QCRefreshBaseControlEndRefreshingCompletionBlock)();
 
 @interface QCPullRefreshBaseControl : UIView {
+    // 存储下拉偏移
     UIEdgeInsets _scrollViewOriginalInset;
+    // 父控件
     __weak UIScrollView *_scrollView;
 }
 
 #pragma mark - refresh callback
 /** 正在刷新回调 */
 @property (nonatomic, copy) QCRefreshBaseControlRefreshingBlock refreshingBlock;
+/** 开始刷新回调 */
 @property (nonatomic, copy) QCRefreshBaseControlBeginRefreshingCompletionBlock beginRefreshingCompletionBlock;
+/** 结束刷新回调 */
 @property (nonatomic, copy) QCRefreshBaseControlEndRefreshingCompletionBlock endRefreshingCompletionBlock;
 /** 回调的target action */
 - (void)setRefreshingTarget:(id)refreshingTarget refreshingAction:(SEL)refreshingAction;
@@ -52,8 +56,16 @@ typedef void(^QCRefreshBaseControlEndRefreshingCompletionBlock)();
 @property (nonatomic, assign) BOOL isHaveAnimationEndRefresh;
 /** 进入刷新状态 */
 - (void)beginRefreshing;
+/** 结束刷新状态 */
 - (void)endRefreshing;
+/** 结束刷新状态 是否包含动画 */
 - (void)endRefreshingAnimation:(BOOL)isAnimation;
+/**
+ *  结束刷新状态
+ *
+ *  @param isAnimation 是否包含动画
+ *  @param completion  结束刷新时回调
+ */
 - (void)endRefreshingAnimation:(BOOL)isAnimation
                     completion:(QCRefreshBaseControlEndRefreshingCompletionBlock)completion;
 
