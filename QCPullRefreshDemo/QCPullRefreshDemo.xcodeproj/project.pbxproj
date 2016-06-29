@@ -13,18 +13,18 @@
 		7C63EFBF1D21363B004C688E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C63EFBD1D21363B004C688E /* Main.storyboard */; };
 		7C63EFC11D21363B004C688E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C63EFC01D21363B004C688E /* Assets.xcassets */; };
 		7C63EFC41D21363B004C688E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */; };
-		7C63EFE41D21364A004C688E /* QCPullRefreshBaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFCE1D21364A004C688E /* QCPullRefreshBaseControl.m */; };
-		7C63EFE51D21364A004C688E /* UIScrollView+QCAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD11D21364A004C688E /* UIScrollView+QCAttribute.m */; };
-		7C63EFE61D21364A004C688E /* UIScrollView+QCPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD31D21364A004C688E /* UIScrollView+QCPullRefresh.m */; };
-		7C63EFE71D21364A004C688E /* UIView+QCAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD51D21364A004C688E /* UIView+QCAttribute.m */; };
-		7C63EFE81D21364A004C688E /* QCHalfCandyAnimationRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFD81D21364A004C688E /* QCHalfCandyAnimationRefresh.m */; };
-		7C63EFE91D21364A004C688E /* QCHalfCandyShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFDA1D21364A004C688E /* QCHalfCandyShadowAnimation.m */; };
-		7C63EFEA1D21364A004C688E /* QCPullRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */; };
-		7C63EFEB1D21364A004C688E /* QCPullRefreshAnimationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */; };
-		7C63EFEC1D21364A004C688E /* QCPullRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */; };
 		7CBDB0A71D2395A000C4C1C4 /* UseDefaultTtileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0A61D2395A000C4C1C4 /* UseDefaultTtileViewController.m */; };
 		7CBDB0AA1D2395B400C4C1C4 /* UseYourSelfTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0A91D2395B400C4C1C4 /* UseYourSelfTitleViewController.m */; };
 		7CBDB0AE1D23961100C4C1C4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */; };
+		7CBDB0C81D239EB600C4C1C4 /* QCPullRefreshBaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0B21D239EB600C4C1C4 /* QCPullRefreshBaseControl.m */; };
+		7CBDB0C91D239EB600C4C1C4 /* UIScrollView+QCAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0B51D239EB600C4C1C4 /* UIScrollView+QCAttribute.m */; };
+		7CBDB0CA1D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0B71D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.m */; };
+		7CBDB0CB1D239EB600C4C1C4 /* UIView+QCAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0B91D239EB600C4C1C4 /* UIView+QCAttribute.m */; };
+		7CBDB0CC1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0BC1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.m */; };
+		7CBDB0CD1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0BE1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.m */; };
+		7CBDB0CE1D239EB600C4C1C4 /* QCPullRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0C11D239EB600C4C1C4 /* QCPullRefreshConst.m */; };
+		7CBDB0CF1D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0C41D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.m */; };
+		7CBDB0D01D239EB600C4C1C4 /* QCPullRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0C61D239EB600C4C1C4 /* QCPullRefreshHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,31 +38,31 @@
 		7C63EFC01D21363B004C688E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C63EFC31D21363B004C688E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C63EFC51D21363B004C688E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C63EFCD1D21364A004C688E /* QCPullRefreshBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshBaseControl.h; sourceTree = "<group>"; };
-		7C63EFCE1D21364A004C688E /* QCPullRefreshBaseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshBaseControl.m; sourceTree = "<group>"; };
-		7C63EFD01D21364A004C688E /* UIScrollView+QCAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QCAttribute.h"; sourceTree = "<group>"; };
-		7C63EFD11D21364A004C688E /* UIScrollView+QCAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QCAttribute.m"; sourceTree = "<group>"; };
-		7C63EFD21D21364A004C688E /* UIScrollView+QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QCPullRefresh.h"; sourceTree = "<group>"; };
-		7C63EFD31D21364A004C688E /* UIScrollView+QCPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QCPullRefresh.m"; sourceTree = "<group>"; };
-		7C63EFD41D21364A004C688E /* UIView+QCAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QCAttribute.h"; sourceTree = "<group>"; };
-		7C63EFD51D21364A004C688E /* UIView+QCAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QCAttribute.m"; sourceTree = "<group>"; };
-		7C63EFD71D21364A004C688E /* QCHalfCandyAnimationRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCHalfCandyAnimationRefresh.h; sourceTree = "<group>"; };
-		7C63EFD81D21364A004C688E /* QCHalfCandyAnimationRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCHalfCandyAnimationRefresh.m; sourceTree = "<group>"; };
-		7C63EFD91D21364A004C688E /* QCHalfCandyShadowAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCHalfCandyShadowAnimation.h; sourceTree = "<group>"; };
-		7C63EFDA1D21364A004C688E /* QCHalfCandyShadowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCHalfCandyShadowAnimation.m; sourceTree = "<group>"; };
-		7C63EFDC1D21364A004C688E /* QCPullRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshConst.h; sourceTree = "<group>"; };
-		7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshConst.m; sourceTree = "<group>"; };
-		7C63EFDF1D21364A004C688E /* QCPullRefreshAnimationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshAnimationHeader.h; sourceTree = "<group>"; };
-		7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshAnimationHeader.m; sourceTree = "<group>"; };
-		7C63EFE11D21364A004C688E /* QCPullRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshHeader.h; sourceTree = "<group>"; };
-		7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshHeader.m; sourceTree = "<group>"; };
-		7C63EFE31D21364A004C688E /* QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefresh.h; sourceTree = "<group>"; };
 		7CBDB0A51D2395A000C4C1C4 /* UseDefaultTtileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseDefaultTtileViewController.h; sourceTree = "<group>"; };
 		7CBDB0A61D2395A000C4C1C4 /* UseDefaultTtileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseDefaultTtileViewController.m; sourceTree = "<group>"; };
 		7CBDB0A81D2395B400C4C1C4 /* UseYourSelfTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseYourSelfTitleViewController.h; sourceTree = "<group>"; };
 		7CBDB0A91D2395B400C4C1C4 /* UseYourSelfTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseYourSelfTitleViewController.m; sourceTree = "<group>"; };
 		7CBDB0AC1D23961100C4C1C4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7CBDB0B11D239EB600C4C1C4 /* QCPullRefreshBaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshBaseControl.h; sourceTree = "<group>"; };
+		7CBDB0B21D239EB600C4C1C4 /* QCPullRefreshBaseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshBaseControl.m; sourceTree = "<group>"; };
+		7CBDB0B41D239EB600C4C1C4 /* UIScrollView+QCAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QCAttribute.h"; sourceTree = "<group>"; };
+		7CBDB0B51D239EB600C4C1C4 /* UIScrollView+QCAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QCAttribute.m"; sourceTree = "<group>"; };
+		7CBDB0B61D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+QCPullRefresh.h"; sourceTree = "<group>"; };
+		7CBDB0B71D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+QCPullRefresh.m"; sourceTree = "<group>"; };
+		7CBDB0B81D239EB600C4C1C4 /* UIView+QCAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QCAttribute.h"; sourceTree = "<group>"; };
+		7CBDB0B91D239EB600C4C1C4 /* UIView+QCAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QCAttribute.m"; sourceTree = "<group>"; };
+		7CBDB0BB1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCHalfCandyAnimationRefresh.h; sourceTree = "<group>"; };
+		7CBDB0BC1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCHalfCandyAnimationRefresh.m; sourceTree = "<group>"; };
+		7CBDB0BD1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCHalfCandyShadowAnimation.h; sourceTree = "<group>"; };
+		7CBDB0BE1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCHalfCandyShadowAnimation.m; sourceTree = "<group>"; };
+		7CBDB0C01D239EB600C4C1C4 /* QCPullRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshConst.h; sourceTree = "<group>"; };
+		7CBDB0C11D239EB600C4C1C4 /* QCPullRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshConst.m; sourceTree = "<group>"; };
+		7CBDB0C31D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshAnimationHeader.h; sourceTree = "<group>"; };
+		7CBDB0C41D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshAnimationHeader.m; sourceTree = "<group>"; };
+		7CBDB0C51D239EB600C4C1C4 /* QCPullRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshHeader.h; sourceTree = "<group>"; };
+		7CBDB0C61D239EB600C4C1C4 /* QCPullRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshHeader.m; sourceTree = "<group>"; };
+		7CBDB0C71D239EB600C4C1C4 /* QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefresh.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,8 @@
 		7C63EFA81D21363B004C688E = {
 			isa = PBXGroup;
 			children = (
-				7C63EFB31D21363B004C688E /* QCPullRefreshDemo */,
 				7C63EFB21D21363B004C688E /* Products */,
+				7C63EFB31D21363B004C688E /* QCPullRefreshDemo */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,13 +95,13 @@
 		7C63EFB31D21363B004C688E /* QCPullRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7CBDB0AF1D239EB600C4C1C4 /* QCPullRefresh */,
 				7CBDB0AB1D2395B800C4C1C4 /* DemoVC */,
-				7C63EFCB1D21364A004C688E /* QCPullRefresh */,
+				7C63EFB41D21363B004C688E /* Supporting Files */,
 				7C63EFB71D21363B004C688E /* AppDelegate.h */,
 				7C63EFB81D21363B004C688E /* AppDelegate.m */,
 				7C63EFBA1D21363B004C688E /* ViewController.h */,
 				7C63EFBB1D21363B004C688E /* ViewController.m */,
-				7C63EFB41D21363B004C688E /* Supporting Files */,
 			);
 			path = QCPullRefreshDemo;
 			sourceTree = "<group>";
@@ -109,93 +109,93 @@
 		7C63EFB41D21363B004C688E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7C63EFBD1D21363B004C688E /* Main.storyboard */,
 				7C63EFC01D21363B004C688E /* Assets.xcassets */,
-				7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */,
 				7C63EFC51D21363B004C688E /* Info.plist */,
+				7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */,
+				7C63EFBD1D21363B004C688E /* Main.storyboard */,
 				7C63EFB51D21363B004C688E /* main.m */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7C63EFCB1D21364A004C688E /* QCPullRefresh */ = {
-			isa = PBXGroup;
-			children = (
-				7C63EFCC1D21364A004C688E /* Base */,
-				7C63EFCF1D21364A004C688E /* Category */,
-				7C63EFD61D21364A004C688E /* Common */,
-				7C63EFDB1D21364A004C688E /* Const */,
-				7C63EFDE1D21364A004C688E /* Header */,
-				7C63EFE31D21364A004C688E /* QCPullRefresh.h */,
-			);
-			name = QCPullRefresh;
-			path = ../../QCPullRefresh;
-			sourceTree = "<group>";
-		};
-		7C63EFCC1D21364A004C688E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				7C63EFCD1D21364A004C688E /* QCPullRefreshBaseControl.h */,
-				7C63EFCE1D21364A004C688E /* QCPullRefreshBaseControl.m */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		7C63EFCF1D21364A004C688E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				7C63EFD01D21364A004C688E /* UIScrollView+QCAttribute.h */,
-				7C63EFD11D21364A004C688E /* UIScrollView+QCAttribute.m */,
-				7C63EFD21D21364A004C688E /* UIScrollView+QCPullRefresh.h */,
-				7C63EFD31D21364A004C688E /* UIScrollView+QCPullRefresh.m */,
-				7C63EFD41D21364A004C688E /* UIView+QCAttribute.h */,
-				7C63EFD51D21364A004C688E /* UIView+QCAttribute.m */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		7C63EFD61D21364A004C688E /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				7C63EFD71D21364A004C688E /* QCHalfCandyAnimationRefresh.h */,
-				7C63EFD81D21364A004C688E /* QCHalfCandyAnimationRefresh.m */,
-				7C63EFD91D21364A004C688E /* QCHalfCandyShadowAnimation.h */,
-				7C63EFDA1D21364A004C688E /* QCHalfCandyShadowAnimation.m */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		7C63EFDB1D21364A004C688E /* Const */ = {
-			isa = PBXGroup;
-			children = (
-				7C63EFDC1D21364A004C688E /* QCPullRefreshConst.h */,
-				7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */,
-			);
-			path = Const;
-			sourceTree = "<group>";
-		};
-		7C63EFDE1D21364A004C688E /* Header */ = {
-			isa = PBXGroup;
-			children = (
-				7C63EFDF1D21364A004C688E /* QCPullRefreshAnimationHeader.h */,
-				7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */,
-				7C63EFE11D21364A004C688E /* QCPullRefreshHeader.h */,
-				7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */,
-			);
-			path = Header;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		7CBDB0AB1D2395B800C4C1C4 /* DemoVC */ = {
 			isa = PBXGroup;
 			children = (
+				7CBDB0AC1D23961100C4C1C4 /* BaseViewController.h */,
+				7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */,
 				7CBDB0A51D2395A000C4C1C4 /* UseDefaultTtileViewController.h */,
 				7CBDB0A61D2395A000C4C1C4 /* UseDefaultTtileViewController.m */,
 				7CBDB0A81D2395B400C4C1C4 /* UseYourSelfTitleViewController.h */,
 				7CBDB0A91D2395B400C4C1C4 /* UseYourSelfTitleViewController.m */,
-				7CBDB0AC1D23961100C4C1C4 /* BaseViewController.h */,
-				7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */,
 			);
-			name = DemoVC;
+			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		7CBDB0AF1D239EB600C4C1C4 /* QCPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0B01D239EB600C4C1C4 /* Base */,
+				7CBDB0B31D239EB600C4C1C4 /* Category */,
+				7CBDB0BA1D239EB600C4C1C4 /* Common */,
+				7CBDB0BF1D239EB600C4C1C4 /* Const */,
+				7CBDB0C21D239EB600C4C1C4 /* Header */,
+				7CBDB0C71D239EB600C4C1C4 /* QCPullRefresh.h */,
+			);
+			name = QCPullRefresh;
+			path = ../../QCPullRefresh;
+			sourceTree = "<group>";
+		};
+		7CBDB0B01D239EB600C4C1C4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0B11D239EB600C4C1C4 /* QCPullRefreshBaseControl.h */,
+				7CBDB0B21D239EB600C4C1C4 /* QCPullRefreshBaseControl.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7CBDB0B31D239EB600C4C1C4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0B41D239EB600C4C1C4 /* UIScrollView+QCAttribute.h */,
+				7CBDB0B51D239EB600C4C1C4 /* UIScrollView+QCAttribute.m */,
+				7CBDB0B61D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.h */,
+				7CBDB0B71D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.m */,
+				7CBDB0B81D239EB600C4C1C4 /* UIView+QCAttribute.h */,
+				7CBDB0B91D239EB600C4C1C4 /* UIView+QCAttribute.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7CBDB0BA1D239EB600C4C1C4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0BB1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.h */,
+				7CBDB0BC1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.m */,
+				7CBDB0BD1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.h */,
+				7CBDB0BE1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7CBDB0BF1D239EB600C4C1C4 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0C01D239EB600C4C1C4 /* QCPullRefreshConst.h */,
+				7CBDB0C11D239EB600C4C1C4 /* QCPullRefreshConst.m */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		7CBDB0C21D239EB600C4C1C4 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0C31D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.h */,
+				7CBDB0C41D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.m */,
+				7CBDB0C51D239EB600C4C1C4 /* QCPullRefreshHeader.h */,
+				7CBDB0C61D239EB600C4C1C4 /* QCPullRefreshHeader.m */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,19 +268,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C63EFE61D21364A004C688E /* UIScrollView+QCPullRefresh.m in Sources */,
+				7CBDB0C91D239EB600C4C1C4 /* UIScrollView+QCAttribute.m in Sources */,
 				7CBDB0AE1D23961100C4C1C4 /* BaseViewController.m in Sources */,
 				7C63EFBC1D21363B004C688E /* ViewController.m in Sources */,
-				7C63EFE41D21364A004C688E /* QCPullRefreshBaseControl.m in Sources */,
+				7CBDB0CA1D239EB600C4C1C4 /* UIScrollView+QCPullRefresh.m in Sources */,
 				7C63EFB91D21363B004C688E /* AppDelegate.m in Sources */,
-				7C63EFE91D21364A004C688E /* QCHalfCandyShadowAnimation.m in Sources */,
-				7C63EFEB1D21364A004C688E /* QCPullRefreshAnimationHeader.m in Sources */,
+				7CBDB0CB1D239EB600C4C1C4 /* UIView+QCAttribute.m in Sources */,
+				7CBDB0CC1D239EB600C4C1C4 /* QCHalfCandyAnimationRefresh.m in Sources */,
+				7CBDB0CD1D239EB600C4C1C4 /* QCHalfCandyShadowAnimation.m in Sources */,
+				7CBDB0CF1D239EB600C4C1C4 /* QCPullRefreshAnimationHeader.m in Sources */,
+				7CBDB0D01D239EB600C4C1C4 /* QCPullRefreshHeader.m in Sources */,
+				7CBDB0C81D239EB600C4C1C4 /* QCPullRefreshBaseControl.m in Sources */,
 				7C63EFB61D21363B004C688E /* main.m in Sources */,
-				7C63EFEA1D21364A004C688E /* QCPullRefreshConst.m in Sources */,
-				7C63EFE81D21364A004C688E /* QCHalfCandyAnimationRefresh.m in Sources */,
-				7C63EFEC1D21364A004C688E /* QCPullRefreshHeader.m in Sources */,
-				7C63EFE51D21364A004C688E /* UIScrollView+QCAttribute.m in Sources */,
-				7C63EFE71D21364A004C688E /* UIView+QCAttribute.m in Sources */,
+				7CBDB0CE1D239EB600C4C1C4 /* QCPullRefreshConst.m in Sources */,
 				7CBDB0AA1D2395B400C4C1C4 /* UseYourSelfTitleViewController.m in Sources */,
 				7CBDB0A71D2395A000C4C1C4 /* UseDefaultTtileViewController.m in Sources */,
 			);
@@ -295,6 +295,7 @@
 				7C63EFBE1D21363B004C688E /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */ = {
@@ -303,6 +304,7 @@
 				7C63EFC31D21363B004C688E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -394,7 +396,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = QCPullRefreshDemo/Info.plist;
+				INFOPLIST_FILE = "QCPullRefreshDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.QCL.QCPullRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,7 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = QCPullRefreshDemo/Info.plist;
+				INFOPLIST_FILE = "QCPullRefreshDemo/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.QCL.QCPullRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
