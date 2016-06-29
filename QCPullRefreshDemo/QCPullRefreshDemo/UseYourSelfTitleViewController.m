@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.tableView.qc_header = [QCPullRefreshAnimationHeader headerPullingTitle:@"Use Your Self Title" refreshingTitle:@"Your Self Title Refreshing" headerWithRefreshingBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self.tableView reloadData];

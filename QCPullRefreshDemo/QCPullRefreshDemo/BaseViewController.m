@@ -20,6 +20,7 @@ static NSString * const kTableViewCellReuse = @"reuse";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = self.classPrefix;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
