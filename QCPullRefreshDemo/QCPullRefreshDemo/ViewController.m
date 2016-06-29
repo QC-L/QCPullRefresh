@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "BaseViewController.h"
 #import "QCPullRefresh.h"
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *myTableView;
-
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *refreshDemoTableView;
+@property (nonatomic, strong) NSMutableArray *array;
 @end
 
 @implementation ViewController
@@ -19,27 +20,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.myTableView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlock:^{
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.myTableView reloadData];
-            [_myTableView.qc_header endRefreshing];
-        });
-    }];
-    
-    
-    
-    
-    
+    self.array = [NSMutableArray arrayWithObjects:@"UseDefaultTtile", @"UseYourSelfTitle", nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.array.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuse"];
-    cell.textLabel.text = @"嘿嘿";
+    cell.textLabel.text = self.array[indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *classPrefix = self.array[indexPath.row];
+    NSString *className = [classPrefix stringByAppendingString:@"ViewController"];
+    Class cls = NSClassFromString(className);
+    if (cls) {
+        BaseViewController *clsVC = [[cls alloc] init];
+        clsVC.classPrefix = classPrefix;
+        [self.navigationController pushViewController:clsVC animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

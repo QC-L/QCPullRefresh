@@ -22,6 +22,9 @@
 		7C63EFEA1D21364A004C688E /* QCPullRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFDD1D21364A004C688E /* QCPullRefreshConst.m */; };
 		7C63EFEB1D21364A004C688E /* QCPullRefreshAnimationHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFE01D21364A004C688E /* QCPullRefreshAnimationHeader.m */; };
 		7C63EFEC1D21364A004C688E /* QCPullRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */; };
+		7CBDB0A71D2395A000C4C1C4 /* UseDefaultTtileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0A61D2395A000C4C1C4 /* UseDefaultTtileViewController.m */; };
+		7CBDB0AA1D2395B400C4C1C4 /* UseYourSelfTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0A91D2395B400C4C1C4 /* UseYourSelfTitleViewController.m */; };
+		7CBDB0AE1D23961100C4C1C4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,12 @@
 		7C63EFE11D21364A004C688E /* QCPullRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefreshHeader.h; sourceTree = "<group>"; };
 		7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCPullRefreshHeader.m; sourceTree = "<group>"; };
 		7C63EFE31D21364A004C688E /* QCPullRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCPullRefresh.h; sourceTree = "<group>"; };
+		7CBDB0A51D2395A000C4C1C4 /* UseDefaultTtileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseDefaultTtileViewController.h; sourceTree = "<group>"; };
+		7CBDB0A61D2395A000C4C1C4 /* UseDefaultTtileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseDefaultTtileViewController.m; sourceTree = "<group>"; };
+		7CBDB0A81D2395B400C4C1C4 /* UseYourSelfTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseYourSelfTitleViewController.h; sourceTree = "<group>"; };
+		7CBDB0A91D2395B400C4C1C4 /* UseYourSelfTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseYourSelfTitleViewController.m; sourceTree = "<group>"; };
+		7CBDB0AC1D23961100C4C1C4 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,15 +95,12 @@
 		7C63EFB31D21363B004C688E /* QCPullRefreshDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7CBDB0AB1D2395B800C4C1C4 /* DemoVC */,
 				7C63EFCB1D21364A004C688E /* QCPullRefresh */,
 				7C63EFB71D21363B004C688E /* AppDelegate.h */,
 				7C63EFB81D21363B004C688E /* AppDelegate.m */,
 				7C63EFBA1D21363B004C688E /* ViewController.h */,
 				7C63EFBB1D21363B004C688E /* ViewController.m */,
-				7C63EFBD1D21363B004C688E /* Main.storyboard */,
-				7C63EFC01D21363B004C688E /* Assets.xcassets */,
-				7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */,
-				7C63EFC51D21363B004C688E /* Info.plist */,
 				7C63EFB41D21363B004C688E /* Supporting Files */,
 			);
 			path = QCPullRefreshDemo;
@@ -103,6 +109,10 @@
 		7C63EFB41D21363B004C688E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7C63EFBD1D21363B004C688E /* Main.storyboard */,
+				7C63EFC01D21363B004C688E /* Assets.xcassets */,
+				7C63EFC21D21363B004C688E /* LaunchScreen.storyboard */,
+				7C63EFC51D21363B004C688E /* Info.plist */,
 				7C63EFB51D21363B004C688E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -173,6 +183,19 @@
 				7C63EFE21D21364A004C688E /* QCPullRefreshHeader.m */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		7CBDB0AB1D2395B800C4C1C4 /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				7CBDB0A51D2395A000C4C1C4 /* UseDefaultTtileViewController.h */,
+				7CBDB0A61D2395A000C4C1C4 /* UseDefaultTtileViewController.m */,
+				7CBDB0A81D2395B400C4C1C4 /* UseYourSelfTitleViewController.h */,
+				7CBDB0A91D2395B400C4C1C4 /* UseYourSelfTitleViewController.m */,
+				7CBDB0AC1D23961100C4C1C4 /* BaseViewController.h */,
+				7CBDB0AD1D23961100C4C1C4 /* BaseViewController.m */,
+			);
+			name = DemoVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C63EFE61D21364A004C688E /* UIScrollView+QCPullRefresh.m in Sources */,
+				7CBDB0AE1D23961100C4C1C4 /* BaseViewController.m in Sources */,
 				7C63EFBC1D21363B004C688E /* ViewController.m in Sources */,
 				7C63EFE41D21364A004C688E /* QCPullRefreshBaseControl.m in Sources */,
 				7C63EFB91D21363B004C688E /* AppDelegate.m in Sources */,
@@ -257,6 +281,8 @@
 				7C63EFEC1D21364A004C688E /* QCPullRefreshHeader.m in Sources */,
 				7C63EFE51D21364A004C688E /* UIScrollView+QCAttribute.m in Sources */,
 				7C63EFE71D21364A004C688E /* UIView+QCAttribute.m in Sources */,
+				7CBDB0AA1D2395B400C4C1C4 /* UseYourSelfTitleViewController.m in Sources */,
+				7CBDB0A71D2395A000C4C1C4 /* UseDefaultTtileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +431,7 @@
 				7C63EFCA1D21363B004C688E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
