@@ -1,29 +1,28 @@
 //
-//  UseDefaultTtileViewController.m
+//  UseDefaultTtileCollectionViewViewController.m
 //  QCPullRefreshDemo
 //
-//  Created by QC.L on 16/6/29.
+//  Created by QC.L on 16/7/1.
 //  Copyright © 2016年 QC.L. All rights reserved.
 //
 
-#import "UseDefaultTtileViewController.h"
+#import "UseDefaultTtileCollectionViewViewController.h"
 
-@interface UseDefaultTtileViewController ()
+@interface UseDefaultTtileCollectionViewViewController ()
 
 @end
 
-@implementation UseDefaultTtileViewController
+@implementation UseDefaultTtileCollectionViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.tableView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlock:^{
+    self.collectionView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlock:^{
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self.tableView reloadData];
-            [self.tableView.qc_header endRefreshing];
+            [self.collectionView reloadData];
+            [self.collectionView.qc_header endRefreshing];
         });
     }];
-    
 }
 
 - (void)didReceiveMemoryWarning {

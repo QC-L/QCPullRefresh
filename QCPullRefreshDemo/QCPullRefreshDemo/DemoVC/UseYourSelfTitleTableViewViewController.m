@@ -6,13 +6,13 @@
 //  Copyright © 2016年 QC.L. All rights reserved.
 //
 
-#import "UseYourSelfTitleViewController.h"
+#import "UseYourSelfTitleTableViewViewController.h"
 
-@interface UseYourSelfTitleViewController ()
+@interface UseYourSelfTitleTableViewViewController ()
 
 @end
 
-@implementation UseYourSelfTitleViewController
+@implementation UseYourSelfTitleTableViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

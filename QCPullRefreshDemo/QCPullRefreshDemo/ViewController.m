@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "BaseViewController.h"
 #import "QCPullRefresh.h"
+#import "BaseViewController.h"
+
+static NSString * const kTableViewCellReuse = @"reuse";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *refreshDemoTableView;
@@ -20,22 +22,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.array = [NSMutableArray arrayWithObjects:@"UseDefaultTtile", @"UseYourSelfTitle", nil];
+    NSArray *tableViewArray = [NSArray arrayWithObjects:@"UseDefaultTtileTableView", @"UseYourSelfTitleTableView", nil];
+    NSArray *collectionViewArray = [NSArray arrayWithObjects:@"UseDefaultTtileCollectionView", @"UseYourSelfTitleCollectionView", nil];
+    self.array = [NSMutableArray arrayWithObjects:tableViewArray, collectionViewArray, nil];
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return self.array.count;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.array[section] count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (section == 0) {
+        return @"tableView";
+    } else {
+        return @"collectionView";
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"reuse"];
-    cell.textLabel.text = self.array[indexPath.row];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableViewCellReuse];
+    cell.textLabel.text = self.array[indexPath.section][indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *classPrefix = self.array[indexPath.row];
+    NSString *classPrefix = self.array[indexPath.section][indexPath.row];
     NSString *className = [classPrefix stringByAppendingString:@"ViewController"];
     Class cls = NSClassFromString(className);
     if (cls) {

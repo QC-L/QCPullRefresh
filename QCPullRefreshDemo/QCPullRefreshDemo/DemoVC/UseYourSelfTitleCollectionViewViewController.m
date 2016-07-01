@@ -1,25 +1,28 @@
 //
-//  BaseViewController.m
+//  UseYourSelfTitleCollectionViewViewController.m
 //  QCPullRefreshDemo
 //
 //  Created by QC.L on 16/7/1.
 //  Copyright © 2016年 QC.L. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "UseYourSelfTitleCollectionViewViewController.h"
 
-@interface BaseViewController ()
+@interface UseYourSelfTitleCollectionViewViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation UseYourSelfTitleCollectionViewViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = self.classPrefix;
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.collectionView.qc_header = [QCPullRefreshAnimationHeader headerPullingTitle:@"Use Your Self Title" refreshingTitle:@"Your Self Title Refreshing" headerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.collectionView reloadData];
+            [self.collectionView.qc_header endRefreshing];
+        });
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

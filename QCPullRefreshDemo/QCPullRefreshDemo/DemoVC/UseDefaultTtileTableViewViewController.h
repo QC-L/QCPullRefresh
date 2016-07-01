@@ -6,8 +6,8 @@
 //  Copyright © 2016年 QC.L. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseTableViewViewController.h"
 
-@interface UseDefaultTtileViewController : BaseViewController
+@interface UseDefaultTtileTableViewViewController : BaseTableViewViewController
 
 @end

@@ -6,8 +6,8 @@
 //  Copyright © 2016年 QC.L. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "BaseTableViewViewController.h"
 
-@interface UseYourSelfTitleViewController : BaseViewController
+@interface UseYourSelfTitleTableViewViewController : BaseTableViewViewController
 
 @end
