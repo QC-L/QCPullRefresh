@@ -11,6 +11,8 @@ To run the QCPullRefreshDemo project.
 
 ![PullRefresh](pullRefresh.gif)
 
+## TableView
+
 ### If you use default, you can use
 
 ```
@@ -25,11 +27,34 @@ self.tableView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlo
 ### If you change refresh title, you can use 
 
 ```
-self.tableView.qc_header = [QCPullRefreshAnimationHeader headerPullingTitle:@"Use Your Self Title" refreshingTitle:@"Your Self Title Refreshing" headerWithRefreshingBlock:^{
-      dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-          [self.tableView reloadData];
-          [self.tableView.qc_header endRefreshing];
-      });
+self.collectionView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlock:^{
+     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+          [self.collectionView reloadData];
+          [self.collectionView.qc_header endRefreshing];
+     });
+}];
+```
+## CollectionView
+
+### If you use default, you can use
+
+```
+self.tableView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlock:^{
+     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+         [self.tableView reloadData];
+         [self.tableView.qc_header endRefreshing];
+     });
+}];
+```
+
+### If you change refresh title, you can use 
+
+```
+self.collectionView.qc_header = [QCPullRefreshAnimationHeader headerPullingTitle:@"Use Your Self Title" refreshingTitle:@"Your Self Title Refreshing" headerWithRefreshingBlock:^{
+     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+         [self.collectionView reloadData];
+         [self.collectionView.qc_header endRefreshing];
+     });
 }];
 ```
 ### Notice, If you have navgationController, you can use:
