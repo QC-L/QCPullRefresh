@@ -18,6 +18,7 @@
 @property (nonatomic, strong) CALayer *pathLayer;
 @property (strong, nonatomic) QCHalfCandyShadowAnimation *shadowAnimation;
 @property (nonatomic, assign) CGFloat headerAnimationHeight;
+@property (nonatomic, strong) QCHalfCandyAnimationRefresh *refreshAnimation;
 @end
 
 @implementation QCPullRefreshAnimationHeader
@@ -63,8 +64,6 @@
     self.shadowAnimation.animatedView = self.refreshingLabel;
     self.shadowAnimation.shadowWidth = 30.;
     self.shadowAnimation.duration = 1.2f;
-    
-    
     self.pullingTitle = @"   C'est La Vie   ";
     self.refreshingTitle = @"La Vie est belle";
     [self setTitle:@"" forState:QCRefreshStateNormal];
@@ -85,10 +84,10 @@
         return;
     }
     _pullingTitle = [pullingTitle copy];
-    QCHalfCandyAnimationRefresh *animation = [QCHalfCandyAnimationRefresh defaultAnimationRefresh];
-    self.pathLayer = [animation qcHalfCandyAnimationRefreshWithTitle:pullingTitle];
+    _refreshAnimation = [[QCHalfCandyAnimationRefresh alloc] init];
+    self.pathLayer = [_refreshAnimation qcHalfCandyAnimationRefreshWithTitle:pullingTitle];
     [self.refreshingLabel.layer addSublayer:_pathLayer];
-    [animation addRefreshingAnimation];
+    [_refreshAnimation addRefreshingAnimation];
 }
 
 - (void)placeSubviews {
@@ -118,9 +117,7 @@
 
 - (void)setState:(QCRefreshState)state {
     QCRefreshCheckState
-    
     self.refreshingLabel.text = self.stateTitles[@(state)];
-
     if (state == QCRefreshStatePulling || state == QCRefreshStateNormal) {
         [self.refreshingLabel.layer addSublayer:_pathLayer];
         [self.shadowAnimation stop];
@@ -136,17 +133,13 @@
 
 - (void)scrollViewContentOffsetDidChange:(NSDictionary *)change {
     [super scrollViewContentOffsetDidChange:change];
-    
     NSValue *value = change[@"new"];
     CGPoint point = [value CGPointValue];
-    
     if (-point.y < QCRefreshHeaderHeight && self.scrollView.isDragging) {
         [self.refreshingLabel.layer addSublayer:_pathLayer];
     }
-    
-    QCHalfCandyAnimationRefresh *animation = [QCHalfCandyAnimationRefresh defaultAnimationRefresh];
     if (-point.y - _headerAnimationHeight > 0 && self.scrollView.isDragging) {
-        [animation animationTimeOffset:(-point.y - _headerAnimationHeight) / QCRefreshHeaderHeight * 10];
+        [_refreshAnimation animationTimeOffset:(-point.y - _headerAnimationHeight) / QCRefreshHeaderHeight * 10];
     }
 
 }

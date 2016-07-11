@@ -14,14 +14,6 @@
 @end
 
 @implementation QCHalfCandyAnimationRefresh
-+ (QCHalfCandyAnimationRefresh *)defaultAnimationRefresh {
-    static QCHalfCandyAnimationRefresh *animationRefresh = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        animationRefresh = [[QCHalfCandyAnimationRefresh alloc] init];
-    });
-    return animationRefresh;
-}
 
 - (NSAttributedString *)handleStringWithTitle:(NSString *)title {
     CTFontRef font = CTFontCreateWithName(CFSTR("HelveticaNeue-UltraLight"), 24.0f, NULL);

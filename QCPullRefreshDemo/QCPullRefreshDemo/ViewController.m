@@ -26,6 +26,16 @@ static NSString * const kTableViewCellReuse = @"reuse";
     NSArray *tableViewArray = [NSArray arrayWithObjects:@"UseDefaultTtileTableView", @"UseYourSelfTitleTableView", nil];
     NSArray *collectionViewArray = [NSArray arrayWithObjects:@"UseDefaultTtileCollectionView", @"UseYourSelfTitleCollectionView", nil];
     self.array = [NSMutableArray arrayWithObjects:tableViewArray, collectionViewArray, nil];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 375, 200)];
+    view.backgroundColor = [UIColor greenColor];
+    _refreshDemoTableView.tableHeaderView = view;
+    
+
+    _refreshDemoTableView.qc_header = [QCPullRefreshAnimationHeader headerWithRefreshingBlock:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [_refreshDemoTableView.qc_header endRefreshing];
+        });
+    }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

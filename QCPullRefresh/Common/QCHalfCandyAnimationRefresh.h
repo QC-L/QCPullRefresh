@@ -11,7 +11,6 @@
 #import <CoreText/CoreText.h>
 
 @interface QCHalfCandyAnimationRefresh : NSObject
-+ (QCHalfCandyAnimationRefresh *)defaultAnimationRefresh;
 - (CALayer *)qcHalfCandyAnimationRefreshWithTitle:(NSString *)title;
 - (void)addRefreshingAnimation;
 - (void)animationTimeOffset:(CGFloat)offset;
