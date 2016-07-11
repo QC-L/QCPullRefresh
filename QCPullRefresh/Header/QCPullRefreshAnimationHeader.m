@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSMutableDictionary *stateTitles;
 @property (nonatomic, strong) CALayer *pathLayer;
 @property (strong, nonatomic) QCHalfCandyShadowAnimation *shadowAnimation;
+@property (nonatomic, assign) CGFloat headerAnimationHeight;
 @end
 
 @implementation QCPullRefreshAnimationHeader
@@ -63,6 +64,7 @@
     self.shadowAnimation.shadowWidth = 30.;
     self.shadowAnimation.duration = 1.2f;
     
+    
     self.pullingTitle = @"   C'est La Vie   ";
     self.refreshingTitle = @"La Vie est belle";
     [self setTitle:@"" forState:QCRefreshStateNormal];
@@ -105,6 +107,13 @@
         point.y = self.refreshingLabel.qc_height - 20;
         _pathLayer.position = point;
     }
+    NSInteger headerHeight = self.scrollView.qc_offsetY;
+    if (headerHeight == -64) {
+        self.headerAnimationHeight = 64;
+    } else {
+        self.headerAnimationHeight = 20;
+    }
+    
 }
 
 - (void)setState:(QCRefreshState)state {
@@ -136,9 +145,8 @@
     }
     
     QCHalfCandyAnimationRefresh *animation = [QCHalfCandyAnimationRefresh defaultAnimationRefresh];
-    
-    if (-point.y - 20 > 0 && self.scrollView.isDragging) {
-        [animation animationTimeOffset:(-point.y - 20) / QCRefreshHeaderHeight * 10];
+    if (-point.y - _headerAnimationHeight > 0 && self.scrollView.isDragging) {
+        [animation animationTimeOffset:(-point.y - _headerAnimationHeight) / QCRefreshHeaderHeight * 10];
     }
 
 }
