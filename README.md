@@ -57,11 +57,6 @@ self.collectionView.qc_header = [QCPullRefreshAnimationHeader headerPullingTitle
      });
 }];
 ```
-### Notice, If you have navgationController, you can use:
-
-```
-self.edgesForExtendedLayout = UIRectEdgeNone;
-```
 
 ## Installation
 
